@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Borda Personalizada</title>
+    <style>
+        h1 {
+            text-align: center;
+            border: 20px solid transparent;
+            padding: 10px;
+            border-image: url('borda.png') 27 repeat;
+        }
+
+        div#paginas {
+            text-align: center;
+        }
+
+        div#paginas > p > a {
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 1rem;
+            font-weight: normal;
+            background-color: lightslategray;
+            text-decoration: none;
+            color: whitesmoke;
+            box-shadow: 3px 3px 7px 1px rgba(0, 0, 0, 0.363);
+        }
+
+        div#paginas:hover > p > a {
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+    <div id="paginas">
+        <p><a href="caixa01.html" target="_self" rel="prev">&lt;&lt; ANTERIOR &lt;&lt;</a></p>
+        <p><a href="caixa03.html" target="_self" rel="next">&gt;&gt; PRÓXIMA &gt;&gt;</a></p>
+    </div>
+</body>
+</html>

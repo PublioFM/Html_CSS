@@ -1,0 +1,39 @@
+@charset "UTF-8";
+/*
+HTML        CSS
+id          # (para um elemento por página)
+class       . (para vários elementos)
+*/
+body {
+    background-color: rgb(205, 255, 203);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: rgb(51, 77, 49);
+}
+
+h1#principal {
+    text-align: center;
+    background-image: radial-gradient(rgb(23, 240, 180),rgb(141, 245, 215), rgb(205, 255, 203));
+}
+
+h2 {
+    color: rgb(22, 180, 0);
+}
+
+.basico {
+    color: rgb(22, 180, 0);
+    font-weight: bold;
+}
+
+.intermediario {
+    color: rgb(168, 180, 0);
+}
+
+.avancado {
+    color: rgb(180, 0, 0);
+}
+
+.destaque {
+    background-color: rgba(255, 230, 0, 0.699);
+}

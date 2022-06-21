@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Desafio Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem Flexível</h1>
+    <p>Esta imagem que você está vendo se ajusta conforme o tamanho da janela em que ela está sendo exibida.</p>    
+    <picture>
+        <source media="(max-width: 640px)" srcset="imagens/img-p.jpg" type="image/jpeg">
+        <source media="(max-width: 780px)" srcset="imagens/img-m.jpg" type="image/jpeg">
+        <source media="(max-width: 800px)" srcset="imagens/img-g.jpg" type="image/jpeg">
+        <img src="imagens/img-gg.jpg" alt="Criança na árvore">
+    </picture>
+</body>
+</html>
