@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+        }
+
+        h1 {
+            font-variant: small-caps;
+            color: darkslategray;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td#resultado {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+            font-weight: bold;
+            background-color: darkslategray;
+            color: white;
+        }
+
+        th#area {
+            background-color: white;
+            color: black;
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+            color:black;
+        }
+        
+        footer {
+            margin: 10px 10px 10px 150px;
+            padding: 30px;
+        }
+        
+        footer > a {
+            padding: 7px;
+            color: black;
+            text-decoration: none;
+            font-variant:small-caps;
+        }
+        
+        footer > a#primeira:hover {
+            color: darkgreen;
+            font-weight: bolder;
+        }
+
+        footer > a#segunda:hover {
+            color: darkblue;
+            font-weight: bolder;
+        }
+
+        footer > a#terceira:hover {
+            color: darkred;
+            font-weight: bolder;
+        }
+</style>
+</head>
+<body>
+    <h1>Desafio Mesclagem 04</h1>
+    <table>
+        <tr>
+            <th scope="col" rowspan="2">Área</th>
+            <th scope="col" rowspan="2">Disciplinas</th>
+            <th scope="colgroup" colspan="2">Notas</th>
+            <th scope="col" rowspan="2">Média</th>
+        </tr>
+        <tr>
+            <th scope="col">Nota 1</th>
+            <th scope="col">Nota 2</th>
+        </tr>
+        <tr>
+            <th id="area" scope="rowgroup" rowspan="4">Exatas</th>
+            <td>Matemática</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Física</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Química</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Média Exatas</th>
+            <td id="resultado">0.0</td>
+        </tr>
+        <tr>
+            <th id="area" scope="rowgroup" rowspan="2">Humanas</th>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <td>Geografia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+        <tr>
+            <th scope="row" colspan="4">Média Humanas</th>
+            <td id="resultado">0.0</td>
+        </tr>        
+    </table>
+</body>
+<footer>
+    <a id="primeira" href="mesclagem01.html" target="_self" rel="prev"> &lArr; Desafio Mesclagem 01 &lArr; </a> <br>
+    <a id="segunda" href="mesclagem02.html" target="_self" rel="prev"> &lArr; Desafio Mesclagem 02 &lArr;</a> <br>
+    <a id="terceira" href="mesclagem03.html" target="_self" rel="prev"> &lArr; Desafio Mesclagem 03 &lArr;</a>
